@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autolife AI - Intelligent Home Automation</title>
+    <style>
+        :root {
+            --primary: #4a6bff;
+            --secondary: #00d4ff;
+            --dark: #1a1a2e;
+            --light: #f7f7f7;
+            --accent: #ff6b6b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--dark);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .floor-plan {
+            display: flex;
+            align-items: center;
+            background: var(--dark);
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 4rem 0;
+        }
+        
+        .floor-plan-content {
+            flex: 1;
+            padding: 3rem;
+        }
+        
+        .floor-plan-image {
+            flex: 1;
+            padding: 2rem;
+        }
+        
+        .floor-plan-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+        .nilm-section {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            padding: 4rem 0;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+        
+        .nilm-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .nilm-text {
+            flex: 1;
+        }
+        
+        .nilm-chart {
+            flex: 1;
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 6rem 0;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+        
+        .cta h2 {
+            color: white;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .floor-plan, .nilm-content {
+                flex-direction: column;
+            }
+            
+            .floor-plan-content, .nilm-text {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Autolife AI</div>
+            <p class="tagline">Revolutionizing homes with intelligent automation that understands your lifestyle</p>
+        </div>
+    </header>
+    
+    <section class="container">
+        <h2>The Future of Smart Living</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3 class="feature-title">Intelligent Ecosystem</h3>
+                <p>Our devices communicate with each other, learning your preferences and adapting to your lifestyle in real-time.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔌</div>
+                <h3 class="feature-title">Smart Devices</h3>
+                <p>State-of-the-art connected products with embedded AI for autonomous decision making and seamless integration.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Intuitive Control</h3>
+                <p>Our app anticipates your needs, offering suggestions before you even think of them.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="floor-plan">
+            <div class="floor-plan-content">
+                <h2>Interactive 3D Floor Plan</h2>
+                <p>Control your entire home with an immersive 3D interface. Visualize energy usage, automation workflows, and device status in a realistic digital twin of your home.</p>
+                <p>Tap any room or device to adjust settings, or let our AI suggest optimal configurations based on time, weather, and your habits.</p>
+            </div>
+            <div class="floor-plan-image">
+                <img src="/api/placeholder/500/300" alt="3D Floor Plan Interface">
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="nilm-section">
+            <h2>Advanced Energy Intelligence</h2>
+            <div class="nilm-content">
+                <div class="nilm-text">
+                    <h3>Non-Intrusive Load Monitoring</h3>
+                    <p>Our revolutionary technology identifies the unique electrical signature of every device in your home from a single monitoring point.</p>
+                    <p>Track energy consumption of individual appliances without additional sensors, receive detailed insights about device health, and predict potential failures before they happen.</p>
+                </div>
+                <div class="nilm-chart">
+                    <img src="/api/placeholder/400/300" alt="Energy Monitoring Dashboard">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Predictive Intelligence</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Energy Forecasting</h3>
+                <p>Our AI predicts your home's energy needs and optimizes consumption, saving you money while reducing environmental impact.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔮</div>
+                <h3 class="feature-title">Behavioral Learning</h3>
+                <p>The system learns your habits and preferences, creating automation routines that feel like magic.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3 class="feature-title">Predictive Maintenance</h3>
+                <p>Detect anomalies in device performance and address issues before they become problems.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="cta">
+            <h2>Ready to Transform Your Home?</h2>
+            <p>Experience the most intelligent home automation system ever created.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Autolife AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
